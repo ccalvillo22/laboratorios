@@ -10,58 +10,51 @@ function GEEKFORGEEKS()
    
     if (name.value == "")                                  
     { 
-        window.alert("Please enter your name."); 
+        window.alert("Por favor ingresa tu nombre."); 
         name.focus(); 
         return false; 
     } 
    
     if (address.value == "")                               
     { 
-        window.alert("Please enter your address."); 
+        window.alert("Por favor ingresa tu dirección."); 
         name.focus(); 
         return false; 
     } 
        
     if (email.value == "")                                   
     { 
-        window.alert("Please enter a valid e-mail address."); 
+        window.alert("Por favor ingresa tu e-mail."); 
         email.focus(); 
         return false; 
     } 
    
     if (email.value.indexOf("@", 0) < 0)                 
     { 
-        window.alert("Please enter a valid e-mail address."); 
+        window.alert("Por favor ingresa correctamente tu e-mail."); 
         email.focus(); 
         return false; 
     } 
    
     if (email.value.indexOf(".", 0) < 0)                 
     { 
-        window.alert("Please enter a valid e-mail address."); 
+        window.alert("Por favor ingresa correctamente tu e-mail."); 
         email.focus(); 
         return false; 
     } 
    
     if (phone.value == "")                           
     { 
-        window.alert("Please enter your telephone number."); 
+        window.alert("Por favor ingresa tu numero telefonico"); 
         phone.focus(); 
         return false; 
     } 
    
     if (password.value == "")                        
     { 
-        window.alert("Please enter your password"); 
+        window.alert("Debes de ingresar un password"); 
         password.focus(); 
         return flase; 
-    } 
-   
-    if (what.selectedIndex < 1)                  
-    { 
-        alert("Please enter your course."); 
-        what.focus(); 
-        return false; 
     } 
    
     return true; 
