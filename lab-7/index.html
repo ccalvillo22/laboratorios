@@ -1,50 +1,24 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Contacto</title>
-<style>
-
-      input[type="submit"] {
-        background-color: #333;
-        color: #fff;
-        padding: 10px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
+<body> 
+<h1 style="text-align: center"> REGISTRATION FORM </h1>           
+<form name="RegForm" action="/submit.php" onsubmit="return GEEKFORGEEKS()" method="post">  
       
-      input[type="text"], textarea {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-        }
-
-      .error {
-        color: red;
-      }
-
-      label {
-        display: block;
-        margin-bottom: 10px;
-      }
-
-  </style>
-
-  </head>
-  <body>
-    <script src="./function.js"></script>
-    <h1>Contactanos</h1>
-    <form id="contact-form" action="submit-form.php" method="POST">
-    <label for="name">Nombre:</label>
-    <input type="text" id="name" name="name">
-    <label for="email">Correo Electrónico:</label>
-    <input type="text" id="email" name="email">
-    <label for="message">Mensaje:</label>
-    <textarea id="message" name="message"></textarea>
-    <input type="submit" value="Submit">
-    </form>
-   </body>
+    <p>Name: <input type="text" size=65 name="Name"> </p><br>        
+    <p> Address: <input type="text" size=65 name="Address">  </p><br> 
+    <p>E-mail Address: <input type="text" size=65 name="EMail">  </p><br> 
+     <p>Password: <input type="text" size=65 name="Password"> </p><br> 
+    <p>Telephone: <input type="text" size=65 name="Telephone"> </p><br>   
+           
+    <p>SELECT YOUR COURSE    
+        <select type="text" value="" name="Subject"> 
+            <option>BTECH</option> 
+            <option>BBA</option> 
+            <option>BCA</option> 
+            <option>B.COM</option> 
+            <option>GEEKFORGEEKS</option> 
+        </select></p><br><br> 
+    <p>Comments:  <textarea cols="55" name="Comment">  </textarea></p> 
+    <p><input type="submit" value="send" name="Submit">      
+        <input type="reset" value="Reset" name="Reset">   
+    </p>          
+</form> 
+</body>
