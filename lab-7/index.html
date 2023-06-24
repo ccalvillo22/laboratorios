@@ -1,21 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Contacto</title>
-    <style>
-      label {
-        display: block;
-        margin-bottom: 10px;
-      }
-      input[type="text"], textarea {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        margin-bottom: 20px;
-        border-radius: 5px;
-        border: 1px solid #ccc;
-        box-sizing: border-box;
-      }
+<head>
+<title>Contacto</title>
+<style>
+
       input[type="submit"] {
         background-color: #333;
         color: #fff;
@@ -24,21 +12,39 @@
         border-radius: 5px;
         cursor: pointer;
       }
+      
+      input[type="text"], textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        }
+
       .error {
         color: red;
       }
-    </style>
+
+      label {
+        display: block;
+        margin-bottom: 10px;
+      }
+
+  </style>
+
   </head>
   <body>
     <script src="./function.js"></script>
     <h1>Contactanos</h1>
     <form id="contact-form" action="submit-form.php" method="POST">
-      <label for="name">Nombre:</label>
-      <input type="text" id="name" name="name">
-      <label for="email">Correo Electrónico:</label>
-      <input type="text" id="email" name="email">
-      <label for="message">Mensaje:</label>
-      <textarea id="message" name="message"></textarea>
-      <input type="submit" value="Submit">
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Correo Electrónico:</label>
+    <input type="text" id="email" name="email">
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message"></textarea>
+    <input type="submit" value="Submit">
     </form>
    </body>
