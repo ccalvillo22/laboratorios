@@ -1,5 +1,4 @@
  
- <script> 
 function GEEKFORGEEKS()                                    
 { 
     var name = document.forms["RegForm"]["Name"];               
@@ -66,4 +65,4 @@ function GEEKFORGEEKS()
     } 
    
     return true; 
-}</script>
+}
