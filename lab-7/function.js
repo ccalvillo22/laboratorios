@@ -1,7 +1,7 @@
  
 function ingresartexto(){
   var texto = document.getElementById("e-mail").value;
-  var regex = /^[A-Za-z]$/;
+  var email = /^[A-Za-z]$/;
   if(regex.test(texto))
     document.getElementById("mensaje").innerHTML = "Entrada validada";
   else
@@ -13,7 +13,7 @@ function formulario()
     var address = document.forms["RegForm"]["Address"]; 
     var password = document.forms["RegForm"]["Password"];  
     var what =  document.forms["RegForm"]["Subject"];  
-    var email = document.forms["RegForm"]["EMail"];    
+    /var email = document.forms["RegForm"]["EMail"];/    
     var name = document.forms["RegForm"]["Name"];               
     var what =  document.forms["RegForm"]["Subject"];  
     var phone = document.forms["RegForm"]["Telephone"];  
