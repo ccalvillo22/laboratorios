@@ -59,12 +59,5 @@ function GEEKFORGEEKS()
         return false; 
     } 
    
-    if (what.selectedIndex < 1)                  
-    { 
-        alert("Please enter your sex."); 
-        what.focus(); 
-        return false; 
-    } 
-   
     return true; 
 }
