@@ -9,13 +9,13 @@
 
 <body> 
 <h1 style="text-align: center"> Formulario de Registro </h1> 
-<form>
+<form name="RegForm" action="/submit.php" onsubmit="return formulario()" method="post">
 
 Nombre: <input id="nombre" type="text" onblur="ingresartexto();"/> <span id="mensaje"></span><br>
-<p>Dirección:  <input type="text" size=80 name="Address"></p>
-<p>E-mail:     <input type="text" size=40 name="EMail"></p>
-<p>Contraseña: <input type="text" size=20 name="Password"></p>
-<p>Telefono:   <input type="text" size=10 name="Telephone"></p>
+<p>Dirección:  <input type="text" size=80 name="Address"></p><br>
+<p>E-mail:     <input type="text" size=40 name="EMail"></p><br>
+<p>Contraseña: <input type="text" size=20 name="Password"></p><br>
+<p>Telefono:   <input type="text" size=10 name="Telephone"></p><br>
 
 <p>Seleccione su sexo:<br>  
 <input type="radio" name="sex" value="Masculino" checked>Masculino<br>
