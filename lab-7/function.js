@@ -1,6 +1,6 @@
  
 function ingresartexto(){
-  var field = document.getElementById("e-mail").value;
+  var field = document.getElementById("nombre").value;
   var email = /^[A-Za-z]$/;
   if(email.test(field))
     document.getElementById("mensaje").innerHTML = "Entrada validada";
