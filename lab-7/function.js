@@ -1,8 +1,8 @@
  
 function ingresartexto(){
-  var texto = document.getElementById("e-mail").value;
+  var field = document.getElementById("e-mail").value;
   var email = /^[A-Za-z]$/;
-  if(regex.test(texto))
+  if(email.test(field))
     document.getElementById("mensaje").innerHTML = "Entrada validada";
   else
     document.getElementById("mensaje").innerHTML = "Obligatorio => Ingrese el correo electronico";
@@ -30,9 +30,9 @@ function formulario()
         name.focus(); 
         return false; 
     } 
-    if (email.value == "") 
+    /if (email.value == "") 
 
-    /{ 
+    { 
         window.alert("Please enter a valid e-mail address."); 
         email.focus(); 
         return false; 

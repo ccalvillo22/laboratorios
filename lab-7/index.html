@@ -11,9 +11,12 @@
 <h1 style="text-align: center"> Formulario de Registro </h1>           
 <form name="RegForm" action="/submit.php" onsubmit="return formulario()" method="post">  
 
+E-mail_01<input id="email" type="text" onblur="ingresartexto();"/> <span id="mensaje"></span>
 <p>Nombre:     <input type="text" size=40 name="Name"> </p>  
 <p>Dirección:  <input type="text" size=80 name="Address"></p>
-<p>E-mail:     <input id="e-mail" type="text"  onblur="ingresartexto();" size=40 name="EMail"></p><span id="mensaje"></span>
+<!--
+<p>E-mail:     <input type="text" size=40 name="EMail"></p>
+-->
 <p>Contraseña: <input type="text" size=20 name="Password"></p>
 <p>Telefono:   <input type="text" size=10 name="Telephone"></p>
 <p>Seleccione su sexo:<br>  
