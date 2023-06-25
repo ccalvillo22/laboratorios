@@ -15,6 +15,10 @@ function funcion_nombre (){
   }
 }
 
+function focusFunction() {
+  document.getElementById("nombrePrompt").style.background = "yellow";
+}
+
 /* Funcion de Direccion */
 function funcion_dir (){
   var add = document.getElementById("direccion").value;
