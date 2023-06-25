@@ -1,7 +1,7 @@
 /* Funcion de Nombre */
 function funcion_nombre (){
   var name = document.getElementById("nombre").value;
-  var a = /^[a-zA-Z\s\'\-] {2,15}$/;
+  var a = /^[A-zA-z\s\'\-] {2,15}$/;
 
   if (a.test(name)){
     document.getElementById("nombrePrompt").style.color = "Green";
