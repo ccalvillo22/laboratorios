@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="style.css">
 <title>Laboratorio 7</title>
+<script type="text/javascript" src="style.css"></script>
 </head>
+
 <body>
+<form action="#">
+<div id="fullpage">
+<hi>Make an Order:</h1>
+<table border="0">
 
-<script src="./function.js"></script>
+<tr>
+<td class="label_col">Nombre:</td>
+<td class="input_col"><input name="nombre" id="nombre" type="text" onblur="funcion_nombre();"></td>
+<td class="feedback_col"><span id="nombrePrompt">&nbsp;</span></td>
+</tr>
 
-<body> 
-<h1 style="text-align: center"> Formulario de Registro </h1> 
-<form name="RegForm" action="/submit.php" onsubmit="return formulario()" method="post">
+<tr>
+<td class="label_col">Direcccion:</td>
+<td class="input_col"><input name="direccion" id="direccion" type="text" onblur="funcion_dir();"></td>
+<td class="feedback_col"><span id="direccionPrompt">&nbsp;</span></td>
+</tr>
 
-Nombre: <input id="nombre" type="text" onblur="ingresartexto();"/> <span id="mensaje"></span><br>
-<p>Dirección:  <input type="text" size=80 name="Address"></p><br>
-<p>E-mail:     <input type="text" size=40 name="EMail"></p><br>
-<p>Contraseña: <input type="text" size=20 name="Password"></p><br>
-<p>Telefono:   <input type="text" size=10 name="Telephone"></p><br>
+<tr>
+<td class="label_col">E-mail:</td>
+<td class="input_col"><input name="email" id="email" type="text" onblur="funcion_email();"></td>
+<td class="feedback_col"><span id="emailPrompt">&nbsp;</span></td>
+</tr>
 
-<p>Seleccione su sexo:<br>  
-<input type="radio" name="sex" value="Masculino" checked>Masculino<br>
-<input type="radio" name="sex" value="Femenino" checked>Femenino<br>
-<p>Coments:  <textarea cols="55" name="Comment">  </textarea></p> 
-<p><input type="submit" value="send" name="Submit">        
-</p>
-     
-</form> 
+<tr>
+<td class="label_col">Telefono:</td>
+<td class="input_col"><input name="telefono" id="telefono" type="text" onblur="funcion_tel();"></td> placeholder="xx-xx-xx-xx-xx"></td>
+<td class="feedback_col"><span id="telefonoPrompt">xx-xx-xx-xx-xx</span></td>
+</tr>
 
+<tr>
+<td class="label_col">Contraseña:</td>
+<td class="input_col"><input name="contrasena" id="contrasena" type="text" onblur="funcion_cont();"></td>
+<td class="feedback_col"><span id="contrasenaPrompt">&nbsp;</span></td>
+</tr>
+
+<tr>
+<td class="Button" id="Button" colspan="3"><span class="buttonBG" onclick="calcOrder();">Order Now>/span></td>
+</tr>
+
+<tr>
+<td><input type="submit" value="submit"/></td>
+</tr>
+</table>
+
+<span id="orderConfirm">&nbsp;</span>
+</div>
+</form>
 </body>
