@@ -1,0 +1,24 @@
+table {
+	width: 500px;
+	border-collage: collapse;
+	table-layout: fixed;
+}
+
+#fullpage {
+	margin: 100px;
+}
+
+.feedback_col{
+	texte-align: center;
+	vertical-align: middle;
+	color: LightGray:
+	font-size: small;
+}
+
+.input_col{
+	text-align: left;
+}
+
+.label_col{
+	text-align: right;
+}
