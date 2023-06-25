@@ -25,11 +25,11 @@
 // xxxx.xxxx = byeSpeaker; => La asignacion correcta es: window.byeSpeaker = byeSpeaker;
 
 
-(function(window) {
+(function(window) { 
 var speakWord = "Good Bye";
-var byeSpeaker = new Object();
-byeSpeaker.speak = function speak(name) {
+var byeSpeaker = new Object(); //  Objeto byeSpeaker
+byeSpeaker.speak = function speak(name) { // Funcion  speak adjunta al objeto byeSpeaker
 console.log(speakWord + " " + name);
 };
-window.byeSpeaker = byeSpeaker;
+window.byeSpeaker = byeSpeaker;// Objeto declarado global
 })(window);
