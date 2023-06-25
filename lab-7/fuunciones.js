@@ -18,7 +18,7 @@ function funcion_nombre (){
 /* Funcion de Direccion */
 function funcion_dir (){
   var add = document.getElementById("direccion").value;
-  var b = /^[a-zA-Z\s\'\-] {2,15}$/;
+  var b = /^[A-zA-z\s\'\-] {3}$/;
 
   if (b.test(add)){
     document.getElementById("direccionPrompt").style.color = "Green";
