@@ -18,7 +18,7 @@ function funcion_nombre (){
 /* Funcion de Direccion */
 function funcion_dir (){
   var add = document.getElementById("direccion").value;
-  var b = /^[A-zA-z\s\'\-] {3}$/;
+  var b = /^[A-zA-z\s\'\-] {2,15}$/;
 
   if (b.test(add)){
     document.getElementById("direccionPrompt").style.color = "Green";
@@ -52,8 +52,7 @@ function funcion_email (){
 /* Funcion de Telefono */
 function funcion_tel (){
   var tel = document.getElementById("telefono").value;
-  var d = /^\{10}$/;
-  /* /^\d{2}-\d{2}-\d{2}-\d{2}-\d{2}$/; */
+  var d = /^\d{2}-\d{2}-\d{2}-\d{2}-\d{2}$/;
 
   if (d.test(tel)){
     document.getElementById("telefonoPrompt").style.color = "Green";
