@@ -52,7 +52,8 @@ function funcion_email (){
 /* Funcion de Telefono */
 function funcion_tel (){
   var tel = document.getElementById("telefono").value;
-  var d = /^\d{2}\d{2}\d{2}\d{2}\d{2}$/;
+  var d = /^\{10}$/;
+  /* /^\d{2}-\d{2}-\d{2}-\d{2}-\d{2}$/; */
 
   if (d.test(tel)){
     document.getElementById("telefonoPrompt").style.color = "Green";
