@@ -4,12 +4,12 @@ function funcion_nombre (){
   var a = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   id (a.test(name)){
-    document.getElementById("nombrePrompt").style.color = "green";
+    document.getElementById("nombrePrompt").style.color = "black";
     document.getElementById("nombrePrompt").InnerHTML = "Ok"
     return true;
   }
   else {
-    document.getElementById("nombrePrompt").style.color = red
+    document.getElementById("nombrePrompt").style.color = "black";
     document.getElementById("nombrePrompt").InnerHTML = "Ingresa los caracteres correctos"
     return false;
   }
@@ -21,10 +21,12 @@ function funcion_dir (){
   var b = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   id (b.test(add)){
+    document.getElementById("direccionPrompt").style.color = "black";
     document.getElementById("direccionPrompt").InnerHTML = "Ok"
     return true;
   }
   else {
+    document.getElementById("direccionPrompt").style.color = "black";
     document.getElementById("direccionPrompt").InnerHTML = "Ingresa los caracteres correctos"
     return false;
   }
@@ -36,10 +38,12 @@ function funcion_email (){
   var c = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   id (c.test(eml)){
+    document.getElementById("emailPrompt").style.color = "black";
     document.getElementById("emailPrompt").InnerHTML = "Ok"
     return true;
   }
   else {
+    document.getElementById("emailPrompt").style.color = "black";
     document.getElementById("emailPrompt").InnerHTML = "Ingresa los caracteres correctos"
     return false;
   }
@@ -51,10 +55,12 @@ function funcion_tel (){
   var d = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   id (d.test(tel)){
+    document.getElementById("telefonoPrompt").style.color = "black";
     document.getElementById("telefonoPrompt").InnerHTML = "Ok"
     return true;
   }
   else {
+    document.getElementById("telefonoPrompt").style.color = "black";
     document.getElementById("telefonoPrompt").InnerHTML = "Ingresa los caracteres correctos"
     return false;
   }
@@ -66,10 +72,12 @@ function funcion_cont (){
   var e = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   id (e.test(cont)){
+    document.getElementById("contrasenaPrompt").style.color = "black";
     document.getElementById("contrasenaPrompt").InnerHTML = "Ok"
     return true;
   }
   else {
+    document.getElementById("contrasenaPrompt").style.color = "black";
     document.getElementById("nombrePrompt").InnerHTML = "Ingresa los caracteres correctos"
     return false;
   }
