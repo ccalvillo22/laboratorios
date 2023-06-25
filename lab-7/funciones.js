@@ -1,18 +1,13 @@
 /* Funcion de Nombre */
 function funcion_nombre (){
-  var name = document.getElementById("nombre").value;
-  var a = /^[a-zA-Z\s\'\-] {2,15}$/;
+  var name = document.forms["RegForm"]["Name"];
 
-  if (a.test(name)){
-    document.getElementById("nombrePrompt").style.color = "Green";
-    document.getElementById("nombrePrompt").InnerHTML = "<strong>Ok</strong>";
-    return true;
+  if (name.value == ""){
+   window.alert("Ingresa tu nombre."); 
+        name.focus(); 
+        return false;
   }
-  else {
-    document.getElementById("nombrePrompt").style.color = "Red";
-    document.getElementById("nombrePrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
-    return false;
-  }
+  return true;
 }
 
 /* Funcion de Direccion */
