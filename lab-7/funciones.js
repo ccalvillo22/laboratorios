@@ -52,7 +52,7 @@ function funcion_email (){
 /* Funcion de Telefono */
 function funcion_tel (){
   var tel = document.getElementById("telefono").value;
-  var d = /^[a-zA-Z\s\'\-] {2,15}$/;
+  var d = /^\d{3}-\d{3}-\d{4}$/;
 
   if (d.test(tel)){
     document.getElementById("telefonoPrompt").style.color = "Green";
