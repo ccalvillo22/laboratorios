@@ -31,7 +31,7 @@ function funcion_dir (){
 }
 
 /* Funcion de E-mail */
-function funcion_dir (){
+function funcion_email (){
   var eml = document.getElementById("email").value;
   var c = /^[a-zA-Z\s\'\-] {2,15}$/;
 
@@ -46,7 +46,7 @@ function funcion_dir (){
 }
 
 /* Funcion de Telefono */
-function funcion_nombre (){
+function funcion_tel (){
   var tel = document.getElementById("telefono").value;
   var d = /^[a-zA-Z\s\'\-] {2,15}$/;
 
@@ -61,7 +61,7 @@ function funcion_nombre (){
 }
 
 /* Funcion de Contraseña */
-function funcion_nombre (){
+function funcion_cont (){
   var cont = document.getElementById("contrasena").value;
   var e = /^[a-zA-Z\s\'\-] {2,15}$/;
 
