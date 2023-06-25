@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="style.css">
+<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
 <title>Laboratorio 7</title>
 <script type="text/javascript" src="style.css"></script>
 </head>
@@ -12,6 +12,8 @@
 <form action="#">
 <div id="fullpage">
 <hi>Make an Order:</h1>
+</br>
+
 <table border="0">
 
 <tr>
@@ -34,7 +36,7 @@
 
 <tr>
 <td class="label_col">Telefono:</td>
-<td class="input_col"><input name="telefono" id="telefono" type="text" onblur="funcion_tel();"></td> placeholder="xx-xx-xx-xx-xx"></td>
+<td class="input_col"><input name="telefono" id="telefono" type="text" onblur="funcion_tel();" placeholder ="xx-xx-xx-xx-xx"></td> </td>
 <td class="feedback_col"><span id="telefonoPrompt">xx-xx-xx-xx-xx</span></td>
 </tr>
 
@@ -44,16 +46,7 @@
 <td class="feedback_col"><span id="contrasenaPrompt">&nbsp;</span></td>
 </tr>
 
-<tr>
-<td class="Button" id="Button" colspan="3"><span class="buttonBG" onclick="calcOrder();">Order Now>/span></td>
-</tr>
-
-<tr>
-<td><input type="submit" value="submit"/></td>
-</tr>
 </table>
-
-<span id="orderConfirm">&nbsp;</span>
 </div>
 </form>
 </body>
