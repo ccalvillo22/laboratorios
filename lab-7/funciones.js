@@ -5,12 +5,12 @@ function funcion_nombre (){
 
   if (a.test(name)){
     document.getElementById("nombrePrompt").style.color = "Green";
-    document.getElementById("nombrePrompt").InnerHTML = "<strong>Ok</strong>";
+    document.getElementById("nombrePrompt").InnerHTML = "Ok";
     return true;
   }
   else {
     document.getElementById("nombrePrompt").style.color = "Red";
-    document.getElementById("nombrePrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
+    document.getElementById("nombrePrompt").InnerHTML = "Ingresa los caracteres correctos";
     return false;
   }
 }
@@ -22,12 +22,12 @@ function funcion_dir (){
 
   if (b.test(add)){
     document.getElementById("direccionPrompt").style.color = "Green";
-    document.getElementById("direccionPrompt").InnerHTML = "<strong>Ok</strong>";
+    document.getElementById("direccionPrompt").InnerHTML = "Ok";
     return true;
   }
   else {
     document.getElementById("direccionPrompt").style.color = "Red";
-    document.getElementById("direccionPrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
+    document.getElementById("direccionPrompt").InnerHTML = "Ingresa los caracteres correctos";
     return false;
   }
 }
@@ -39,12 +39,12 @@ function funcion_email (){
 
   if (c.test(eml)){
     document.getElementById("emailPrompt").style.color = "Green";
-    document.getElementById("emailPrompt").InnerHTML = "<strong>Ok</strong>";
+    document.getElementById("emailPrompt").InnerHTML = "Ok";
     return true;
   }
   else {
     document.getElementById("emailPrompt").style.color = "Red";
-    document.getElementById("emailPrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
+    document.getElementById("emailPrompt").InnerHTML = "Ingresa los caracteres correctos";
     return false;
   }
 }
@@ -52,16 +52,16 @@ function funcion_email (){
 /* Funcion de Telefono */
 function funcion_tel (){
   var tel = document.getElementById("telefono").value;
-  var d = /^\d{3}-\d{3}-\d{4}$/;
+  var d = /^\d{2}-\d{2}-\d{2}-\d{2}$/;
 
   if (d.test(tel)){
     document.getElementById("telefonoPrompt").style.color = "Green";
-    document.getElementById("telefonoPrompt").InnerHTML = "<strong>Ok</strong>";
+    document.getElementById("telefonoPrompt").InnerHTML = "Ok";
     return true;
   }
   else {
     document.getElementById("telefonoPrompt").style.color = "Red";
-    document.getElementById("telefonoPrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
+    document.getElementById("telefonoPrompt").InnerHTML = "Ingresa los caracteres correctos";
     return false;
   }
 }
@@ -73,12 +73,12 @@ function funcion_cont (){
 
   if (e.test(cont)){
     document.getElementById("contrasenaPrompt").style.color = "Green";
-    document.getElementById("contrasenaPrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
+    document.getElementById("contrasenaPrompt").InnerHTML = "Ingresa los caracteres correctos";
     return true;
   }
   else {
     document.getElementById("contrasenaPrompt").style.color = "Red";
-    document.getElementById("nombrePrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
+    document.getElementById("nombrePrompt").InnerHTML = "Ingresa los caracteres correctos";
     return false;
   }
 }
