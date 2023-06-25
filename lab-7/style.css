@@ -29,3 +29,9 @@ table {
 .label_col{
 	text-align: right;
 }
+
+td{
+	vertical-align: top;
+	word-wrap: break-word;
+	padding: 5px;
+}
