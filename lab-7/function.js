@@ -4,13 +4,13 @@ function funcion_nombre (){
   var a = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   if (a.test(name)){
-    document.getElementById("nombrePrompt").style.color = "green";
-    document.getElementById("nombrePrompt").InnerHTML = "Ok"
+    document.getElementById("nombrePrompt").style.color = "Green";
+    document.getElementById("nombrePrompt").InnerHTML = "<strong>Ok</strong>";
     return true;
   }
   else {
-    document.getElementById("nombrePrompt").style.color = "red";
-    document.getElementById("nombrePrompt").InnerHTML = "Ingresa los caracteres correctos"
+    document.getElementById("nombrePrompt").style.color = "Red";
+    document.getElementById("nombrePrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
     return false;
   }
 }
@@ -21,13 +21,13 @@ function funcion_dir (){
   var b = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   if (b.test(add)){
-    document.getElementById("direccionPrompt").style.color = "green";
-    document.getElementById("direccionPrompt").InnerHTML = "Ok"
+    document.getElementById("direccionPrompt").style.color = "Green";
+    document.getElementById("direccionPrompt").InnerHTML = "<strong>Ok</strong>";
     return true;
   }
   else {
-    document.getElementById("direccionPrompt").style.color = "red";
-    document.getElementById("direccionPrompt").InnerHTML = "Ingresa los caracteres correctos"
+    document.getElementById("direccionPrompt").style.color = "Red";
+    document.getElementById("direccionPrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
     return false;
   }
 }
@@ -38,13 +38,13 @@ function funcion_email (){
   var c = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   if (c.test(eml)){
-    document.getElementById("emailPrompt").style.color = "green";
-    document.getElementById("emailPrompt").InnerHTML = "Ok"
+    document.getElementById("emailPrompt").style.color = "Green";
+    document.getElementById("emailPrompt").InnerHTML = "<strong>Ok</strong>";
     return true;
   }
   else {
-    document.getElementById("emailPrompt").style.color = "red";
-    document.getElementById("emailPrompt").InnerHTML = "Ingresa los caracteres correctos"
+    document.getElementById("emailPrompt").style.color = "Red";
+    document.getElementById("emailPrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
     return false;
   }
 }
@@ -55,13 +55,13 @@ function funcion_tel (){
   var d = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   if (d.test(tel)){
-    document.getElementById("telefonoPrompt").style.color = "green";
-    document.getElementById("telefonoPrompt").InnerHTML = "Ok"
+    document.getElementById("telefonoPrompt").style.color = "Green";
+    document.getElementById("telefonoPrompt").InnerHTML = "<strong>Ok</strong>";
     return true;
   }
   else {
-    document.getElementById("telefonoPrompt").style.color = "red";
-    document.getElementById("telefonoPrompt").InnerHTML = "Ingresa los caracteres correctos"
+    document.getElementById("telefonoPrompt").style.color = "Red";
+    document.getElementById("telefonoPrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
     return false;
   }
 }
@@ -72,13 +72,13 @@ function funcion_cont (){
   var e = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   if (e.test(cont)){
-    document.getElementById("contrasenaPrompt").style.color = "green";
-    document.getElementById("contrasenaPrompt").InnerHTML = "Ok"
+    document.getElementById("contrasenaPrompt").style.color = "Green";
+    document.getElementById("contrasenaPrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
     return true;
   }
   else {
-    document.getElementById("contrasenaPrompt").style.color = "red";
-    document.getElementById("nombrePrompt").InnerHTML = "Ingresa los caracteres correctos"
+    document.getElementById("contrasenaPrompt").style.color = "Red";
+    document.getElementById("nombrePrompt").InnerHTML = "<strong>Ingresa los caracteres correctos</strong>";
     return false;
   }
 }
