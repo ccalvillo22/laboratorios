@@ -21,12 +21,10 @@ function funcion_dir (){
   var b = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   id (b.test(add)){
-    document.getElementById("direccionPrompt").style.color = "green";
     document.getElementById("direccionPrompt").InnerHTML = "Ok"
     return true;
   }
   else {
-    document.getElementById("direccionPrompt").style.color = red
     document.getElementById("direccionPrompt").InnerHTML = "Ingresa los caracteres correctos"
     return false;
   }
@@ -38,12 +36,10 @@ function funcion_dir (){
   var c = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   id (c.test(eml)){
-    document.getElementById("emailPrompt").style.color = "green";
     document.getElementById("emailPrompt").InnerHTML = "Ok"
     return true;
   }
   else {
-    document.getElementById("emailPrompt").style.color = red
     document.getElementById("emailPrompt").InnerHTML = "Ingresa los caracteres correctos"
     return false;
   }
@@ -55,12 +51,10 @@ function funcion_nombre (){
   var d = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   id (d.test(tel)){
-    document.getElementById("telefonoPrompt").style.color = "green";
     document.getElementById("telefonoPrompt").InnerHTML = "Ok"
     return true;
   }
   else {
-    document.getElementById("telefonoPrompt").style.color = red
     document.getElementById("telefonoPrompt").InnerHTML = "Ingresa los caracteres correctos"
     return false;
   }
@@ -72,12 +66,10 @@ function funcion_nombre (){
   var e = /^[a-zA-Z\s\'\-] {2,15}$/;
 
   id (e.test(cont)){
-    document.getElementById("contrasenaPrompt").style.color = "green";
     document.getElementById("contrasenaPrompt").InnerHTML = "Ok"
     return true;
   }
   else {
-    document.getElementById("nombrePrompt").style.color = red
     document.getElementById("nombrePrompt").InnerHTML = "Ingresa los caracteres correctos"
     return false;
   }
